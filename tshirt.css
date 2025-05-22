@@ -1,0 +1,68 @@
+.poster-gallery {
+  text-align: center;
+  /* padding-top: 55px ; */
+  padding: 66px;
+  background-color: #121212;
+  color: white;
+}
+
+.poster-gallery h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+/* .poster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+} */
+
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* max 4 in wide screens */
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+
+.poster-item {
+  background-color: #252525;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+
+.poster-item:hover {
+  transform: translateY(-5px);
+}
+
+.poster-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #e04b18;
+}
+
+.poster-item h3 {
+  margin: 10px;
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  color: #e04b18;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 10px 10px;
+}
+
+.item-info,
+.item-price {
+  font-size: 14px;
+  color: #ffffff;
+}
