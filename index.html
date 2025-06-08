@@ -44,49 +44,85 @@
     </div>
 
 
-    <header class="main-header">
-        <div class="header-upper">
-            <div class="container">
-                <div class="header-inner">
-                    <div class="row align-items-center">
-                        <div class="col-xl-2 col-lg-2 col-md-6 col-6 col-sm-3">
-                            <div class="logo-area">
-                                <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></div>
+   
+
+
+<header class="main-header">
+    <div class="header-upper">
+        <div class="container">
+            <div class="header-inner">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="nav-container">
+
+                            <!-- Left side links -->
+                            <div class="nav-left">
+                                <ul>
+                                    <li><a href="index.html" class="linkstyle">Home</a></li>
+                                    <li><a href="about.html" class="linkstyle">About</a></li>
+                                    <li><a href="service.html" class="linkstyle">Services</a></li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="col-xl-10 col-lg-10 col-md-6 col-6 col-sm-9">
+
+                            <!-- Center logo -->
+                            <div class="logo-area">
+                                <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
+                            </div>
+
+                            <!-- Right side links -->
+                            <div class="nav-right">
+                                <ul>
+                                    <li class="has-dropdown"><a href="projects.html" class="linkstyle">Projects</a></li>
+                                    <li><a href="blog.html" class="linkstyle">Blog</a></li>
+                                    <li><a href="contact.html" class="linkstyle">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Mobile Menu Icon (keep it for MeanMenu & sidebar) -->
+                            <div class="side-menu-icon d-lg-none text-end">
+                                <a href="javascript:void(0)" class="info-toggle-btn f-right sidebar-toggle-btn">
+                                    <i class="fal fa-bars"></i>
+                                </a>
+                            </div>
+
+                            <!-- Mobile Main Menu (hidden in desktop) -->
                             <div class="main-menu">
                                 <nav id="mobile-menu">
                                     <ul>
                                         <li><a href="index.html" class="linkstyle">Home</a></li>
-                                        <li><a href="about.html" class="linkstyle">about</a></li>
-                                        <li><a href="service.html" class="linkstyle">services</a></li>
-                                        <li class="has-dropdown"><a href="projects.html" class="linkstyle">projects</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="projects.html">Projects List</a></li>
-                                                <li><a href="single-project.html">Single Portfolio</a></li>
-                                            </ul>
+                                        <li><a href="about.html" class="linkstyle">About</a></li>
+                                        <li><a href="service.html" class="linkstyle">Services</a></li>
+                                        <li class="has-dropdown">
+                                            <a href="projects.html" class="linkstyle">Projects</a>
+                                          
                                         </li>
                                         <li><a href="blog.html" class="linkstyle">Blog</a></li>
                                         <li><a href="contact.html" class="linkstyle">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="side-menu-icon d-lg-none text-end"><a href="javascript:void(0)" class="info-toggle-btn f-right sidebar-toggle-btn"><i class="fal fa-bars"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+                        </div> <!-- nav-container -->
+                    </div> <!-- col-12 -->
+                </div> <!-- row -->
+            </div> <!-- header-inner -->
+        </div> <!-- container -->
+    </div> <!-- header-upper -->
+</header>
+
+<!-- Sidebar remains unchanged -->
+<div class="sidebar__area">
+    <div class="sidebar__wrapper">
+        <div class="sidebar__close">
+            <button class="sidebar__close-btn" id="sidebar__close-btn">
+                <i class="fal fa-times"></i>
+            </button>
         </div>
-    </header>
-    <div class="sidebar__area">
-        <div class="sidebar__wrapper">
-            <div class="sidebar__close"><button class="sidebar__close-btn" id="sidebar__close-btn"><i class="fal fa-times"></i></button></div>
-            <div class="sidebar__content mt-50 mb-20">
-                <div class="mobile-menu fix"></div>
-            </div>
+        <div class="sidebar__content mt-50 mb-20">
+            <div class="mobile-menu fix"></div>
         </div>
     </div>
+</div>
     <div class="body-overlay"></div>
     <section id="home" class="main-hero-area">
         <div class="container">
