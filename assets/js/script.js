@@ -50,30 +50,34 @@ Version      : 1.0
      * ----------------------------------------------------------------------------------------
      */
 
-    $('#mobile-menu').meanmenu({
-        meanMenuContainer: '.mobile-menu',
-        meanScreenWidth: "991",
-        meanExpand: ['<i class="fal fa-plus"></i>'],
-    });
+  
+$('#mobile-menu').meanmenu({
+    meanMenuContainer: '.mobile-menu',
+    meanScreenWidth: "991",
+    meanExpand: ['<i class="fal fa-plus"></i>'],
+});
 
-    $(".sidebar__close-btn ,.mobile-menu .onepage li a  > *:not(button)").on("click", function() {
-        $(".sidebar__area").removeClass("sidebar-opened");
-        $(".body-overlay").removeClass("opened");
-    });
+$(".sidebar__close-btn, .mobile-menu .onepage li a > *:not(button)").on("click", function() {
+    $(".sidebar__area").removeClass("sidebar-opened");
+    $(".body-overlay").removeClass("opened");
+});
 
-    $(".sidebar-toggle-btn").on("click", function() {
-        $(".sidebar__area").addClass("sidebar-opened");
-        $(".body-overlay").addClass("opened");
-    });
-    $(".sidebar__close-btn").on("click", function() {
-        $(".sidebar__area").removeClass("sidebar-opened");
-        $(".body-overlay").removeClass("opened");
-    });
+$(".sidebar-toggle-btn").on("click", function() {
+    $(".sidebar__area").addClass("sidebar-opened");
+    $(".body-overlay").addClass("opened");
+});
 
-    $(".body-overlay").on("click", function() {
-        $(".sidebar__area").removeClass("sidebar-opened");
-        $(".body-overlay").removeClass("opened");
-    });
+$(".sidebar__close-btn").on("click", function() {
+    $(".sidebar__area").removeClass("sidebar-opened");
+    $(".body-overlay").removeClass("opened");
+});
+
+$(".body-overlay").on("click", function() {
+    $(".sidebar__area").removeClass("sidebar-opened");
+    $(".body-overlay").removeClass("opened");
+});
+
+
 
 
 
